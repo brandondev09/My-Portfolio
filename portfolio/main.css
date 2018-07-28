@@ -27,8 +27,12 @@ body {
   border-color: #0091ea;
   border-radius: 20px;
   border-width: 2.5px;
-  background-color: white;
+  background-color: transparent;
   color: #0091ea;
+}
+.btn-info:hover {
+  background-color: #0091ea;
+  border-color: transparent;
 }
 .weight {
   font-weight: 400;
@@ -180,6 +184,9 @@ body {
   }
 }
 @media (min-width: 910px) {
+  .work--heading {
+    margin-top: 15%;
+  }
   .work--container {
     flex-direction: row;
     margin-bottom: 15%;
@@ -193,7 +200,8 @@ body {
   .jumbo-about h1 {
     font-size: 45px !important;
   }
-  .work--heading h3 {
+  .contact-button {
+    margin-right: 2rem;
   }
 }
 
@@ -214,10 +222,11 @@ body {
   }
   .services--container {
     max-width: 82%;
+    margin-bottom: 10%;
   }
   .jumbo-about {
     margin-bottom: 20%;
   }
-  .footer--link {
+
   }
 }
