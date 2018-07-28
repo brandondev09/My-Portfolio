@@ -1,0 +1,223 @@
+body {
+  background-color: #fff;
+  font-family: "europa", sans-serif;
+}
+.underline {
+  text-decoration: underline;
+}
+.radius {
+  border-radius: 20px;
+}
+.avatar-radius {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.center-text {
+  text-align: center;
+}
+.navbar-brand {
+  font-size: 1.75rem;
+  color: #0091ea !important;
+}
+.navbar {
+  justify-content: space-between !important;
+}
+.contact-button {
+  border-style: solid;
+  border-color: #0091ea;
+  border-radius: 20px;
+  border-width: 2.5px;
+  background-color: white;
+  color: #0091ea;
+}
+.weight {
+  font-weight: 400;
+}
+.jumbo-about {
+  font-size: 20px;
+  font-weight: 200;
+  background: #fff;
+  color: black;
+  height: auto;
+  padding-top: 90px;
+  margin-bottom: 40%;
+}
+.jumbo-about h1 p {
+  color: black;
+}
+
+.services--heading {
+  background-color: #0091ea;
+  max-width: 82%;
+  margin: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+.services--heading h3 {
+  font-size: 3.25rem;
+  padding-bottom: 2%;
+}
+.services--container {
+  background-color: #0091ea;
+  border-radius: 0px 0px 20px 20px;
+  max-width: 82%;
+  margin: auto;
+  color: white;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 48px !important;
+}
+
+.work--heading {
+  max-width: 100%;
+  margin-top: 15%;
+  background-color: white;
+  color: black;
+}
+
+.work--container {
+  max-width: 80%;
+  margin-bottom: 35%;
+}
+
+.work--item {
+  margin-bottom: 5%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.footer--links {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+/*
+.link--border {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+}
+*/
+.footer--link {
+  max-width: 20%;
+  height: auto;
+  padding: 1rem 1rem;
+}
+
+.email--link {
+  color: black;
+  opacity: 0.9;
+  font-size: 44px !important;
+  margin-top: -4px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .jumbo-about {
+    margin-bottom: 25%;
+  }
+}
+@media (min-width: 658px) {
+  .services--heading {
+    max-width: 82%;
+    height: auto;
+  }
+  .services--container {
+    max-width: 82%;
+    height: auto;
+  }
+  .work--heading {
+    margin-top: 25%;
+  }
+  .work--container {
+    max-width: 65%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .services--heading {
+    max-width: 90%;
+    margin: auto;
+    padding: 7% 2% 2% 2% !important;
+  }
+  .services--container {
+    max-width: 90%;
+    margin: auto;
+    padding: 2% 2% 7% 2% !important;
+  }
+  .work--heading {
+    margin-bottom: 0;
+  }
+
+  .work--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 5%;
+    flex-wrap: nowrap;
+    margin-bottom: 22%;
+  }
+  .contact-link {
+    padding-right: 2%;
+  }
+
+  .work--item {
+    text-align: center;
+    width: 60%;
+    padding-bottom: 2%;
+  }
+}
+@media (min-width: 910px) {
+  .work--container {
+    flex-direction: row;
+    margin-bottom: 15%;
+  }
+  .work--item {
+    width: 30%;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .jumbo-about h1 {
+    font-size: 45px !important;
+  }
+  .work--heading h3 {
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .jumbo-about h1 {
+    font-size: 55px !important;
+  }
+  .work--heading h3 {
+    font-size: 55px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .services--heading {
+    max-width: 82%;
+  }
+  .services--container {
+    max-width: 82%;
+  }
+  .jumbo-about {
+    margin-bottom: 20%;
+  }
+  .footer--link {
+  }
+}
