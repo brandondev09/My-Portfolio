@@ -190,11 +190,11 @@ body {
   .work--container {
     flex-direction: row;
     margin-bottom: 15%;
+    justify-content: space-evenly;
   }
   .work--item {
-    width: 30%;
+    width: 22%;
     text-align: center;
-    justify-content: space-evenly;
   }
 
   .jumbo-about h1 {
@@ -226,7 +226,5 @@ body {
   }
   .jumbo-about {
     margin-bottom: 20%;
-  }
-
   }
 }
