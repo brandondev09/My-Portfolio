@@ -1,0 +1,217 @@
+//==================== Checkout ====================//
+p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.woocommerce-order-overview {
+  li {
+    border: none !important;
+    letter-spacing: 1px !important;
+    font-size: 12px !important;
+    strong,b,span {
+      font-size: 14px !important;
+      text-transform: uppercase !important;
+      line-height: 1.5 !important;
+      font-weight: bold !important;
+    }
+  }
+}
+
+.woocommerce-column__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: white;
+}
+
+address {
+  letter-spacing: 1px;
+  font-style: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.container.checkout {
+  padding-top: 30px;
+  form {
+    h3, strong, label, p#billing_country_field {
+      font-weight: 500 !important;
+      text-transform: uppercase !important;
+      margin-bottom: 15px !important;
+      padding-left: 0px !important;
+      padding-right:  0px !important;
+      letter-spacing: 1px !important;
+    }
+    p#billing_country_field {
+      margin-top: 30px !important;
+    }
+    .form-row {
+      padding-bottom: 0px !important;
+      margin-bottom: 15px !important;
+      padding-top: 0px !important;
+      margin-top: 0px !important;
+      label {
+        display: none;
+      }
+      p {
+        padding: 0 !important;
+      }
+      input, select {
+        height: 42px;
+        border: $border;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      textarea {
+        resize: vertical;
+        padding: 15px;
+        border: $border;
+      }
+      a.select2-choice {
+        border-radius: 0px !important;
+        height: 42px;
+      }
+    }
+  }
+  h3#order_review_heading {
+    margin-top: 30px !important;
+  }
+  .woocommerce table {
+    border-radius: 0px !important;
+    border-color: #ccc !important;
+    th,td {
+      border-color: #ccc !important;
+    }
+  }
+  .woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
+    border: $border !important;
+  }
+  .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+    width: 50% !important;
+  }
+  .woocommerce table.shop_table {
+    th {
+      text-transform: uppercase;
+    }
+    td, dt, dd {
+      letter-spacing: 1px !important;
+    }
+    dd.variation-Size, dd.variation-Colour {
+      margin-bottom: 0px !important;
+    }
+    .clear {
+      display: none;
+    }
+  }
+}
+
+div#payment {
+  background: white !important;
+  border-top: 1px solid #ccc;
+  border-radius: 0px !important;
+  margin-top: 30px;
+  padding-top: 0px;
+  .clear {
+    display: none;
+  }
+}
+
+.payment_box.payment_method_beanstream {
+  background: white !important;
+}
+
+p#billing_phone_field, p#billing_first_name_field, p#billing_email_field,p#billing_state_field, p#shipping_first_name_field, p#shipping_email_field, p#shipping_state_field {
+  padding-left: 0px !important;
+  padding-right: 7.5px !important;
+}
+
+p#billing_email_field, p#billing_last_name_field, p#billing_postcode_field, p#shipping_last_name_field, p#shipping_phone_field, p#shipping_postcode_field {
+  padding-right: 0px !important;
+  padding-left: 7.5px !important;
+}
+
+p#shipping_state_field, p#shipping_postcode_field, p#billing_postcode_field, p#billing_state_field ,p#billing_address_2_field, p#billing_city_field, p#order_comments_field, p#billing_address_1_field, p#shipping_address_2_field, p#shipping_city_field, p#order_comments_field, p#shipping_address_1_field {
+  padding: 0px !important;
+}
+
+p#shipping_country_field {
+  margin-top: 30px !important;
+}
+
+#add_payment_method #payment div.payment_box:before, .woocommerce-cart #payment div.payment_box:before, .woocommerce-checkout #payment div.payment_box:before {
+  display: none !important;
+}
+
+#order_review {
+  #payment {
+    margin-top: 45px !important;
+    .wc_payment_methods.payment_methods.methods {
+      padding: 0px !important;
+      padding-top: 30px !important;
+      border: none !important;
+      .wc_payment_method.payment_method_beanstream {
+        .payment_box.payment_method_beanstream {
+          padding: 0 !important;
+          margin: 0px !important;
+          margin-top: 15px !important;
+          fieldset {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+            p {
+              width: auto !important;
+              float: left !important;
+              padding: 0px !important;
+              margin-bottom: 0px !important;
+              &:first-child {
+                min-width: 50% !important;
+                margin-right: 15px !important;
+              }
+              &:nth-child(3n) {
+                #beanstream_expmonth {
+                  margin-right: 8px;
+                }
+                #beanstream_expyear {
+                  margin-right: 15px;
+                }
+              }
+              &:nth-child(4n) {
+                width: 10% !important;
+                input {
+                  width: 100% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#payment #place_order {
+  background: black !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  font-weight: $font-medium !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  clear: both !important;
+  margin-top: 30px;
+  width: 140px !important;
+  font-size: 12px !important;
+  height: 40px !important;
+  margin-left: 0px !important;
+  border-radius: 0px !important;
+  float: left !important;
+}
+
+.form-row.place-order {
+  padding: 0 !important;
+}

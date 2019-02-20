@@ -1,0 +1,90 @@
+//==================== Instagram Feed ====================//
+
+section#instagram-construct {
+  margin-top: 90px;
+}
+
+#instagram-feed {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  a {
+    flex:1;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .instagram-image {
+    flex:1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: top;
+    background-size: 100%;
+    //== Hover ==//
+    &:hover {
+      opacity: .75;
+    }
+    img {
+      width: 130%;
+    }
+  }
+}
+
+#instagram-slider {
+  height: 300px;
+  li {
+    width: 100%;
+    a {
+      width: 100%;
+      .instagram-image {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: top;
+        background-size: 113%;
+      }
+    }
+  }
+}
+
+#instagram-construct {
+  .unslider {
+    height: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .unslider-nav, .unslider-arrow {
+    display: none !important;
+  }
+}
+
+@media(min-width: $xs) and (max-width:$sm) {
+  #instagram-feed {
+    a {
+      margin-right: 15px;
+      &:nth-child(5n), &:nth-child(6n) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width:$xs) {
+  #instagram-feed {
+    display: none;
+  }
+  #instagram-feed {
+    display: none;
+  }
+  #instagram-construct {
+    .unslider {
+      height: auto;
+    }
+  }
+}

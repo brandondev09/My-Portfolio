@@ -1,0 +1,123 @@
+//==================== Buttons ====================//
+
+.button {
+  border: none;
+  outline: none !important;
+  color: white;
+  font-weight: $font-medium;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  i {
+    color: white;
+    margin-left: 7px;
+  }
+  &:hover {
+    opacity: .75;
+  }
+  &.grey {
+    background: $dark-grey;
+  }
+  &.black {
+    background: $black;
+  }
+  &.light-grey {
+    background: $light-grey;
+    color: $dark-grey;
+    i {
+      color: inherit;
+    }
+  }
+}
+
+#back-to-top {
+  background: $black;
+  color: white;
+  height: 42px;
+  width: 42px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 5000;
+  &:before {
+    top: -2px;
+    position: relative;
+    left: 1px;
+  }
+  &:hover {
+    opacity: .75;
+  }
+  &.visible {
+    display: flex;
+  }
+}
+
+button.single_add_to_cart_button.button.alt {
+  background: black !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  font-weight: $font-medium !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  clear: both !important;
+  margin-top: 25px;
+  width: 140px !important;
+  font-size: 12px !important;
+  height: 40px !important;
+}
+
+a.button.wc-forward {
+  background: black !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  font-weight: $font-medium !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  clear: both !important;
+  margin-top: 15px;
+  width: 140px !important;
+  font-size: 12px !important;
+  height: 40px !important;
+  margin-left: 30px !important;
+  border-radius: 0px !important;
+}
+
+.return-to-shop {
+  .button.wc-backward {
+    background: black !important;
+    color: white !important;
+    border: none !important;
+    outline: none !important;
+    font-weight: $font-medium !important;
+    text-transform: uppercase !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    clear: both !important;
+    margin-top: 15px;
+    width: 140px !important;
+    font-size: 12px !important;
+    height: 40px !important;
+    margin-left: 0px !important;
+    border-radius: 0px !important;
+  }
+}

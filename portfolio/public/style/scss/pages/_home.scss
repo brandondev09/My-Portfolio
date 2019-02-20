@@ -1,0 +1,46 @@
+//==================== Home ====================//
+#main-container.home {
+  section {
+    margin-top:90px;
+    &#blog-shop {
+      margin-top: 30px;
+      .row {
+        display: flex;
+        .box {
+          flex:1;
+          margin-right: 30px;
+          &:hover {
+            opacity: .75;
+          }
+          &:last-child {
+            margin-right: 0px;
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: $xs) {
+  #main-container.home {
+    section {
+      &#blog-shop {
+        .row {
+          flex-flow: column;
+          .box {
+            margin-right: 0px;
+            margin-bottom: 30px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

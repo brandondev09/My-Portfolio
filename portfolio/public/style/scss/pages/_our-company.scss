@@ -1,0 +1,121 @@
+//==================== Our Company ====================//
+#main-container.our-company {
+  section {
+    &.company-history {
+      padding-top: 20px;
+    }
+    .title {
+      margin-bottom: 10px;
+    }
+    .slide-content {
+      width: 100%;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      width: 1100px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5px;
+      .left {
+        margin-right: 0px;
+        margin-right: 30px;
+        width: 406px;
+        max-width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        p {
+          color: $copper;
+          font-weight: $font-medium;
+          text-transform: uppercase;
+          margin-top: 5px;
+          line-height: 1.25;
+          font-size: 14px;
+        }
+      }
+      .right {
+        margin-left: 0px;
+        width: 100%;
+        p {
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          line-height: 1.5;
+          width: 700px;
+          max-width: 100%;
+        }
+      }
+    }
+    .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+      max-width: 100%;
+      text-align: center;
+      p {
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        line-height: 1.5;
+        width: 100%;
+        &.bold {
+          margin-top: 30px;
+          color: $copper;
+          letter-spacing: 2px;
+          font-weight: $font-medium;
+        }
+      }
+      .button {
+        margin-top: 30px;
+        width: 140px;
+        font-size: 12px;
+        height: 40px;
+        span {
+          font-weight: inherit;
+          color: inherit;
+          font-size: inherit;
+        }
+      }
+      .slide-content {
+        height: 0px;
+        overflow: hidden;
+        transition: .35s;
+      }
+    }
+    &.open {
+      .button {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1150px) {
+  #main-container.our-company {
+    section {
+      .row {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .left {
+          margin-right: 0px;
+          margin-bottom: 30px;
+        }
+        .right {
+          p {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

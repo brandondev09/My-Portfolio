@@ -1,0 +1,200 @@
+//==================== Forms ====================//
+.form {
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  //== Flex ==//
+  .flex {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  //== Flex 1 ==//
+  .flex-1 {
+    margin-right: 30px;
+    //== Last Child ==//
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  //== Input ==//
+  input {
+    height: 52px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border: $border;
+    width: 100%;
+    color: $black;
+    outline: none !important;
+    //== Button ==//
+    &.wpcf7-submit {
+      width: 200px;
+      background: $black;
+      border: 0 !important;
+      color: white;
+      text-transform: uppercase;
+      font-weight: $font-medium;
+      margin-right: auto;
+      //== Hover ==//
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+  //== Text Area ==//
+  textarea {
+    border: $border;
+    resize: none;
+    padding: 15px;
+    width: 100%;
+    color: $black;
+    outline: none !important;
+    font-size: 16px;
+  }
+  //== Input Checkbox ==//
+  .flex.flex-1 {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    justify-content: center;
+    //== Text ==//
+    p {
+      width: auto;
+      font-size: 16px;
+      text-align: left;
+      margin-left: 10px;
+      letter-spacing: 1px;
+    }
+    //== Icon ==//
+    i {
+      font-size: 16px;
+      cursor: pointer;
+      top: -1px;
+      &.fa-check-square-o {
+        color: $copper;
+      }
+    }
+  }
+  .row {
+    display: flex;
+    width: 100%;
+    span {
+      width: 100%;
+    }
+    .input-container {
+      margin-right: 30px;
+      width: 100%;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+//== Checkbox ==//
+.wpcf7-acceptance {
+  position: absolute;
+  left: -99999999px;
+}
+
+//== Form Messages ==//
+span.wpcf7-not-valid-tip {
+    color: $red;
+    font-size: 10px !important;
+    display: block;
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    font-weight: $font-medium;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+  border: none;
+  color: $red;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px !important;
+  font-weight: $font-medium;
+}
+
+.wpcf7-mail-sent-ok {
+  border: none !important;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px !important;
+  margin-top: 10px !important;
+  font-family: $italic-font;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.ajax-loader {
+  display: none !important;
+}
+
+.wpcf7-checkbox {
+  position: absolute;
+  left: -999999px;
+}
+
+.align-left {
+  p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $copper;
+  }
+}
+
+.required-text {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $copper;
+}
+
+.wpcf7-form-control-wrap.acceptance-384 {
+  position: absolute;
+  bottom: -8px;
+  left:0px;
+  width: 100%;
+  text-align: center;
+}
+
+@media(max-width:$xs) {
+  //== form ==//
+  .form {
+    padding-left: 0px;
+    padding-right: 0px;
+    //== Flex ==//
+    .flex {
+      margin-bottom: 0px;
+      flex-flow: column;
+      .flex-1 {
+        margin-right: 0px;
+        margin-bottom: 30px;
+        &.flex {
+          flex-flow: row;
+        }
+      }
+    }
+    //== Quiz ==//
+    .quiz {
+      input {
+        font-size: 16px;
+      }
+    }
+  }
+}

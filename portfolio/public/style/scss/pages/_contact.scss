@@ -1,0 +1,48 @@
+//==================== Contact ====================//
+#main-container.contact {
+  .container {
+    padding-top: 20px;
+    .content {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      width: 1000px;
+      text-align: center;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      p,a {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+      a {
+        color: $copper;
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+    .contact-info {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      width: 1000px;
+      text-align: center;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      p,a {
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-decoration: none;
+      }
+      a {
+        color: $copper;
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+  }
+}

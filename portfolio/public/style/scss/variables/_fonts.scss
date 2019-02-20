@@ -1,0 +1,43 @@
+//==================== Fonts ====================//
+
+@font-face {
+  font-family: Austin;
+  src: local("Austin-Italic"), url("../../fonts/Austin-Italic.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Semibold"), url("../../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Regular"), url("../../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Light"), url("../../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Bold"), url("../../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: 600;
+}
+
+
+
+//== Fonts ==//
+$primary-font: 'ProximaNova';
+$italic-font: 'Austin';
+
+//== Font Weights ==//
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 600;

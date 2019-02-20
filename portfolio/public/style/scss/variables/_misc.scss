@@ -1,0 +1,33 @@
+//==================== Misc Styles ====================//
+//== Border ==//
+$border: 1px solid #999;
+
+//== Standard Box Shadow ==//
+$box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+//== Gutter ==//
+$gutter: 15px;
+
+//== Transition ==//
+$transition: .35s;
+
+//== Menu ==//
+$sidebarMenuWidth: 320px;
+$searchHeight: 160px;
+
+
+$menuHeight: 150px;
+$menuLogoSize: 248px;
+$headerScrollingHeight: 130px;
+$menuMobileHeaderHeight: 120px;
+$mainMenuHeight: 42px;
+$mainMenuTop: $menuHeight + 30px;
+
+$mainMenuTopLoggedin: $mainMenuTop + 32px;
+$headerScrollingHeightLoggedin: $headerScrollingHeight + 32px;
+
+$bodyMarginTop: $menuHeight + $mainMenuHeight + 30px;
+$bodyMarginScrolling: $headerScrollingHeight + $mainMenuHeight + 30px;
+$bodyMarginTopLoggIn: $bodyMarginTop;
+$bodyXsMarginTop: 150px;
+$bodyXsMarginTopLoggIn: $menuMobileHeaderHeight;

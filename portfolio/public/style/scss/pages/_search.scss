@@ -1,0 +1,21 @@
+//==================== Search Page ====================//
+#main-container.search-page {
+  padding-top: 20px;
+  ul {
+    width: 100%;
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+      a {
+        color: $copper;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+//==================== Font Styles ====================//
+section, .container, .shop-wrapper {
+  & > .title {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h2,h1 {
+      background: white;
+      font-size: 42px;
+      padding-left: 27px;
+      padding-right: 27px;
+      font-weight: $font-medium;
+      letter-spacing: 1px;
+      font-family: $italic-font;
+    }
+    h1 {
+      text-transform: uppercase;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 50px;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #999;
+      display: block;
+      z-index: -1;
+      position: absolute;
+      top: 27px;
+      left: 0;
+    }
+    span {
+      color: $black;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 15px;
+      font-weight: $font-medium;
+      a {
+        color: $copper;
+        text-decoration: none;
+        text-transform: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+  }
+}
+
+strong {
+  letter-spacing: inherit;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $black;
+  font-family: $italic-font;
+  font-size: 48px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media(max-width: $sm) {
+  section {
+    & > .title, .container > .title {
+      line-height: 1;
+      text-align: center;
+      h1,h2 {
+        font-size: 32px;
+        line-height: .95;
+      }
+      span {
+        font-size: 13px;
+      }
+      .line {
+        top: 15px;
+      }
+    }
+  }
+  section.blog {
+    .title {
+      .line {
+        top:12px !important;
+      }
+    }
+  }
+}
+
+@media(max-width: $xs) {
+  section {
+    & > .title, .container > .title {
+      h1,h2 {
+        font-size: 36px;
+      }
+      span {
+        line-height: 1.5;
+        font-size: 13px;
+      }
+      .line {
+        top: 15px;
+      }
+    }
+  }
+  section#whats-new {
+    .title {
+      span {
+        width: 240px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//==================== Flex Classes ====================//
+.flex {
+  display: flex;
+  align-items: center;
+}
+.column {
+  flex-flow: column;
+  justify-content: center;
+}
+.baseline {
+  align-items: baseline;
+}
+.flex-start {
+  align-items: flex-start !important;
+}
+
+//== Flex Pulls ==//
+.right {
+  margin-left: auto;
+}
+.left {
+  margin-right: auto;
+}
+
+//== Flex Size ==//
+.flex-1 {
+  flex:1 !important;
+}
+
+.flex-2 {
+  flex:2 !important;
+}
+
+.flex-3 {
+  flex:3 !important;
+}
+
+.flex-end {
+  align-items: flex-end !important;
+}

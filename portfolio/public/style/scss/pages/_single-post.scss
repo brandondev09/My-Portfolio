@@ -1,0 +1,160 @@
+//==================== Single Post ====================//
+#main-container.single-post {
+  .container {
+    padding-top: 20px;
+    .title.header {
+      padding-top: 0px;
+      span {
+        color: $copper;
+      }
+    }
+    p.date {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      color: #999;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      font-weight: $font-medium;
+      line-height: 1;
+    }
+    p {
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: $black;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    a {
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: $copper;
+      font-weight: $font-medium;
+      text-decoration: none;
+      &:hover {
+        opacity: .75;
+      }
+    }
+    em {
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: $black;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    strong {
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: $black;
+      font-weight: $font-bold;
+    }
+    img {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//== Comments ==//
+.comment-list {
+  //== Single Comment ==//
+  .single-comment {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex:1;
+    border-bottom: $border;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    //== Last Comment ==//
+    &:last-child {
+      border: none;
+    }
+    //== Comment Info ==//
+    .comment-info {
+      width: 100%;
+      flex-flow: column;
+      //== Name ==//
+      .name {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        width: 100%;
+        letter-spacing: 1px;
+      }
+      //== Time ==//
+      .time {
+        width: 100%;
+        color: #999;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+    }
+    //== Message ==//
+    .message {
+      //== Text ==//
+      p {
+        font-size: 16px;
+        line-height: 29px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+      }
+      a {
+        font-size: 16px;
+        color: $copper;
+        text-decoration: none;
+        //== Hover ==//
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+  }
+}
+
+figcaption {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $black;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+//== Comment Form ==//
+.comment-form {
+  padding: 0px;
+  //== Input ==//
+  input {
+    margin-bottom: 30px;
+  }
+  //== Textarea ==//
+  textarea {
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  //== Button ==//
+  input.comment-button {
+    width: 200px;
+    background: $black;
+    color: white;
+    font-weight: $font-medium;
+    border: none !important;
+    text-transform: uppercase;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    //== Hover ==//
+    &:hover {
+      opacity: .75;
+    }
+  }
+}
